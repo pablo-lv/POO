@@ -11,6 +11,12 @@ public class Vehiculo {
     private String modelo;
     private int anio;
 
+    public Vehiculo(String matricula, String marca) {
+        super();
+        setMatricula(matricula);
+        this.marca = marca;
+    }
+
     public String getMatricula() {
         return matricula;
     }
