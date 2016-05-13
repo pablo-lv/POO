@@ -17,6 +17,15 @@ public class Vehiculo {
         this.marca = marca;
     }
 
+    public Vehiculo(String matricula, String marca, String modelo, int anio) {
+        super();
+        setMatricula(matricula);
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
+    /*Getters and Setters*/
+
     public String getMatricula() {
         return matricula;
     }
@@ -27,8 +36,30 @@ public class Vehiculo {
         } else {
             System.out.println("La Matricula debe ser de 6 caracateres");
         }
+    }
 
+    public String getMarca() {
+        return marca;
+    }
 
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
 
     //Methods
