@@ -6,10 +6,24 @@ package com.pablolucas.poo;
 public class Vehiculo {
 
     //Attributes
-    String matricula;
-    String marca;
-    String modelo;
-    int anio;
+    private String matricula;
+    private String marca;
+    private String modelo;
+    private int anio;
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        if ( matricula.length() == 6 ) {
+            this.matricula = matricula;
+        } else {
+            System.out.println("La Matricula debe ser de 6 caracateres");
+        }
+
+
+    }
 
     //Methods
     public void arrancar(){

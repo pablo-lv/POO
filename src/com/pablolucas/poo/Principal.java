@@ -7,12 +7,12 @@ public class Principal {
 
     public static void main(String[] args) {
         Vehiculo miVehiculo = new Vehiculo();
-        miVehiculo.marca = "hyundai";
-        miVehiculo.modelo = "i10";
-        miVehiculo.anio = 2015;
 
         miVehiculo.arrancar();
         miVehiculo.frenar();
         miVehiculo.reversa();
+
+        miVehiculo.setMatricula("A90AA");
+        System.out.println(miVehiculo.getMatricula());
     }
 }
