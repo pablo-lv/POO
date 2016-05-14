@@ -1,4 +1,4 @@
-package com.pablolucas.poo;
+package com.pablolucas.vehiculo;
 
 /**
  * Created by paul on 13/05/16.

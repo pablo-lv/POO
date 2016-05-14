@@ -1,7 +1,8 @@
-package com.pablolucas.poo;
+package com.pablolucas.vehiculo;
+
+import com.pablolucas.conductor.ConductorBus;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 /**
  * Created by paul on 13/05/16.
@@ -15,7 +16,7 @@ public class Principal {
         miVehiculo.frenar();
         miVehiculo.reversa();
 
-        ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+        ArrayList<Vehiculo> vehiculos = new ArrayList<>();
         vehiculos.add(new Vehiculo("BB09BB","Ford "));
         vehiculos.add(new Vehiculo("CC23CC", "Mercedez Benz", "S10", 2014));
 
@@ -25,5 +26,9 @@ public class Principal {
             System.out.println(vehiculo.getModelo());
             System.out.println(vehiculo.getAnio());
         }
+        Bus bus = new Bus("AD60AD","Mercedez Benz", "b23", 2015);
+        ConductorBus conductorBus = new ConductorBus("Pablo", "B", bus);
+
+        System.out.println(conductorBus.getNombre());
     }
 }
